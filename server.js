@@ -20,12 +20,12 @@ app.use(function (req, res, next) {
 });
 
 cloudinary.config({
-    cloud_name: 'dpnemhlg6',
-    api_key: '329299296535256',
-    api_secret: 'x2Aata6cqY1aNX2YtHcrQnpjBCY'
+    cloud_name: <YOUT CLOUD_NAME>,
+    api_key: <YOUR API KEY>,
+    api_secret: <YOUR API SECRET>
 });
 //==============================================================================
-var url = 'mongodb://josedavidgm1995:Lespaul#1952@clusterdesign-shard-00-00-kmsdl.mongodb.net:27017,clusterdesign-shard-00-01-kmsdl.mongodb.net:27017,clusterdesign-shard-00-02-kmsdl.mongodb.net:27017/prodoc?ssl=true&replicaSet=ClusterDesign-shard-0&authSource=admin';
+var url = <YOUR MONGODB CLUSTER>;
 var mongoClient = mongo.MongoClient;
 var db = null // global variable to hold the database
 mongoClient.connect(url, (err, database) => {
